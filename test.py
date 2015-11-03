@@ -73,8 +73,6 @@ import sys
 def test():
     for regex, explanation in regex_explanations:
         print regex
-        Pattern(regex).explain(French(sys.stdout.write))
-        #print
-#        assert actual_explanation == explanation, (regex, explain_regex(regex))
+        Pattern(regex).explain(English(sys.stdout.write))
 
 test()
