@@ -108,16 +108,16 @@ A pattern which matches a group, which matches 'abc'
 abc+
 A pattern which matches 'ab'
     followed by the letter 'c', one or more times
-(?P<group_abc>abc)
+(?P&lt;group_abc&gt;abc)
 A pattern which matches a group named 'group_abc', which matches 'abc'
-(?P<group_abc2>abc)(?P<group2>def)
+(?P&lt;group_abc2&gt;abc)(?P&lt;group2&gt;def)
 A pattern which matches a group named 'group_abc2', which matches 'abc'
     followed by a group named 'group2', which matches 'def'
-((?P<group_abc3>abc))
+((?P&lt;group_abc3&gt;abc))
 A pattern which matches a group, which matches a group named 'group_abc3', which matches 'abc'
 (?P=group_4)
 A pattern which matches whatever was matched by group 'group_4'
-^(?:(?P<next_option>\|)|(?:(?P<StartOfText>\^|\\A)|(?P<EndOfText>\$|\\Z)|(?P<WordBoundary>\\b)|(?P<NonWordBoundary>\\B)|(?P<NamedGroup>\(\?P<(?P<group_name>[a-zA-Z_][a-zA-Z0-9_]*)>)|(?P<ConditionalPattern>\(\?\((?P<condition_group_name>[a-zA-Z_][a-zA-Z0-9_]*)\))|(?P<NegativeLookBehindAssertion>\(\?<!)|(?P<LookBehindAssertion>\(\?<=)|(?P<NegativeLookAheadAssertion>\(\?!)|(?P<LookAheadAssertion>\(\?=)|(?P<Comment>\(\?#(?:\\\)|[^\)])*\))|(?P<NonCapturingSubExpression>\(\?:)|(?P<UnnamedGroup>\((?!\?)))|(?:(?P<end_of_group>\))|(?P<CharacterSet>\[\^?\]?(?:\\]|[^\]]-[^\]]|[^\]])*\])|(?P<AnyCharacter>\.)|(?P<CharacterClass>\\n|\\r|\\t|\\s|\\S|\\w|\\W|\\d|\\D)|(?P<BackReference>\(\?P=(?P<other_group_name>[a-zA-Z_][a-zA-Z0-9_]*)\))|(?P<NumericBackReference>\\[1-9]\d?)|(?P<EscapedChar>\\[^nrtsSwWdDbB\dAZ])|(?P<SimpleString>(?:[^.^$+*?|\\[\]{}()]|\\[^nrtsSwWdDbB\dAZ])+(?![+*?{]))|(?P<SingleCharacter>[^.^$+*?|\\[{}()]))(?P<Repeats>(?P<repetition_string>(\+|\*|\{\d+(?:,\d+)?\})?\??))?|(?P<Nonsense>.+?))
+^(?:(?P&lt;next_option&gt;\|)|(?:(?P&lt;StartOfText&gt;\^|\\A)|(?P&lt;EndOfText&gt;\$|\\Z)|(?P&lt;WordBoundary&gt;\\b)|(?P&lt;NonWordBoundary&gt;\\B)|(?P&lt;NamedGroup&gt;\(\?P&lt;(?P&lt;group_name&gt;[a-zA-Z_][a-zA-Z0-9_]*)&gt;)|(?P&lt;ConditionalPattern&gt;\(\?\((?P&lt;condition_group_name&gt;[a-zA-Z_][a-zA-Z0-9_]*)\))|(?P&lt;NegativeLookBehindAssertion&gt;\(\?&lt;!)|(?P&lt;LookBehindAssertion&gt;\(\?&lt;=)|(?P&lt;NegativeLookAheadAssertion&gt;\(\?!)|(?P&lt;LookAheadAssertion&gt;\(\?=)|(?P&lt;Comment&gt;\(\?#(?:\\\)|[^\)])*\))|(?P&lt;NonCapturingSubExpression&gt;\(\?:)|(?P&lt;UnnamedGroup&gt;\((?!\?)))|(?:(?P&lt;end_of_group&gt;\))|(?P&lt;CharacterSet&gt;\[\^?\]?(?:\\]|[^\]]-[^\]]|[^\]])*\])|(?P&lt;AnyCharacter&gt;\.)|(?P&lt;CharacterClass&gt;\\n|\\r|\\t|\\s|\\S|\\w|\\W|\\d|\\D)|(?P&lt;BackReference&gt;\(\?P=(?P&lt;other_group_name&gt;[a-zA-Z_][a-zA-Z0-9_]*)\))|(?P&lt;NumericBackReference&gt;\\[1-9]\d?)|(?P&lt;EscapedChar&gt;\\[^nrtsSwWdDbB\dAZ])|(?P&lt;SimpleString&gt;(?:[^.^$+*?|\\[\]{}()]|\\[^nrtsSwWdDbB\dAZ])+(?![+*?{]))|(?P&lt;SingleCharacter&gt;[^.^$+*?|\\[{}()]))(?P&lt;Repeats&gt;(?P&lt;repetition_string&gt;(\+|\*|\{\d+(?:,\d+)?\})?\??))?|(?P&lt;Nonsense&gt;.+?))
 A pattern which matches the start of the text
     followed by a non-capturing sub-expression, which matches one of the following:
         a group named 'next_option', which matches '|'
@@ -126,14 +126,14 @@ A pattern which matches the start of the text
             or a group named 'EndOfText', which matches '$' or '\Z'
             or a group named 'WordBoundary', which matches '\b'
             or a group named 'NonWordBoundary', which matches '\B'
-            or a group named 'NamedGroup', which matches '(?P<'
+            or a group named 'NamedGroup', which matches '(?P&lt;'
                 followed by a group named 'group_name', which matches an identifier
-                followed by '>'
+                followed by '&gt;'
             or a group named 'ConditionalPattern', which matches '(?('
                 followed by a group named 'condition_group_name', which matches an identifier
                 followed by ')'
-            or a group named 'NegativeLookBehindAssertion', which matches '(?<!'
-            or a group named 'LookBehindAssertion', which matches '(?<='
+            or a group named 'NegativeLookBehindAssertion', which matches '(?&lt;!'
+            or a group named 'LookBehindAssertion', which matches '(?&lt;='
             or a group named 'NegativeLookAheadAssertion', which matches '(?!'
             or a group named 'LookAheadAssertion', which matches '(?='
             or a group named 'Comment', which matches '(?#'
@@ -192,7 +192,7 @@ A pattern which matches the start of the text
 A pattern which matches a group, which matches the letter 'a'
 (?:a)
 A pattern which matches a non-capturing sub-expression, which matches the letter 'a'
-(?P<name>ab)
+(?P&lt;name&gt;ab)
 A pattern which matches a group named 'name', which matches 'ab'
 (?P=name)
 A pattern which matches whatever was matched by group 'name'
@@ -204,11 +204,11 @@ A pattern which matches 'abc'
 def(?!pattern)
 A pattern which matches 'def'
     followed by a negative look-ahead check for a sub-pattern which matches 'pattern'
-[abc](?<=a|b)d
+[abc](?&lt;=a|b)d
 A pattern which matches 'a', 'b' or 'c'
     followed by a look-behind check for a sub-pattern which matches the letter 'a' or the letter 'b'
     followed by the letter 'd'
-[abc](?<=a|b)d
+[abc](?&lt;=a|b)d
 A pattern which matches 'a', 'b' or 'c'
     followed by a look-behind check for a sub-pattern which matches the letter 'a' or the letter 'b'
     followed by the letter 'd'
