@@ -10,11 +10,11 @@ class French(NaturalLanguageOutputter):
     def one_of_the_following(french):
         french.write("l'une des choses suivantes:")
 
-    def the_start_of_the_text(engish):
-        engish.write("le début du texte")
+    def the_start_of_the_text(french):
+        french.write("le début du texte")
 
-    def the_end_of_the_text(engish):
-        engish.write("la fin du texte")
+    def the_end_of_the_text(french):
+        french.write("la fin du texte")
 
     def but_as_few_as_possible(french):
         french.write(', mais aussi peu que possible')
