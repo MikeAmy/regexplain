@@ -13,6 +13,7 @@ Of course these CPUs have their own instruction sets known as natural languages,
 
 Here are some examples:
 
+{pre}
 a
 A pattern which matches the letter 'a'
 b
@@ -213,3 +214,4 @@ A pattern which matches 'a', 'b' or 'c'
     followed by the letter 'd'
 \3
 A pattern which matches whatever was matched by group '3'
+{pre}
