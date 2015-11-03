@@ -196,8 +196,9 @@ A pattern which matches a non-capturing sub-expression, which matches the letter
 A pattern which matches a group named 'name', which matches 'ab'
 (?P=name)
 A pattern which matches whatever was matched by group 'name'
-(?#comment)
-A pattern which matches an ignored comment: 'comment'
+not a comment(?#comment)
+A pattern which matches 'not a comment'
+    followed by an ignored comment: 'comment'
 abc(?=pattern)
 A pattern which matches 'abc'
     followed by a look-ahead check for a sub-pattern which matches 'pattern'
