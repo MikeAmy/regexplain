@@ -1,14 +1,14 @@
 # regexplain
 
-Don't you hate it when you have to type in your phone number, postcode or ID number on a website, and it shows an error saying "Invalid input"?
+Don't you hate it when you have to type your phone number into a website, and it shows an error saying "Invalid input", and you try three different ways of inserting hyphens, zeroes and leading plus signs, to no avail, as it is being matched by a mystery regular expression, that you have no clue what the pattern should be, because showing the regex was deemed too difficult for users to understand?
 
 Your users will hate that too... unless you explain whatever regular expression is validating that input, in plain language.
 
 Now you can, in python, using regexplain.
 
-It's a compiler that compiles a regular expression to run on a certain wet CPU known as a human brain.
+It's a compiler that compiles a regular expression to run on a certain type of wet CPU that runs on glucose and oxygen, known as a human brain.
 
-Of course these CPUs have their own instruction sets known as natural languages, which it compiles for.
+Of course these programmable CPUs can be broadly categorised by their own instruction sets known as natural languages, which it compiles for.
 
 
 Here are some examples:
